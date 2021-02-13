@@ -6,7 +6,7 @@ import { createHttpLink } from 'apollo-link-http';
 import { ApolloProvider } from '@apollo/react-hooks';
 import { setContext } from 'apollo-link-context';
 
-const envv = require('./../config.js');
+const envv = require('./config.js');
 const httpLink = createHttpLink({
   uri: envv.uri
 });
